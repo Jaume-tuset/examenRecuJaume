@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Examen Recuperación{% endblock %}</title>
+        <link rel="stylesheet" href="./css/estils.css" />
+        <link rel="icon" type="image/x-icon" href="./imatges/favicon.ico">        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        <link rel="stylesheet" href="{{ asset(('css/estils.css')) }}"/>
+
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('imatges/favicon.ico')}}"/>
+
+    </head>
+    <body>
+    {% block header %}
+        <div id="embolcall">
+            <header id="cap">
+                <h1>Examen Recuperació DAW<br/> Symfony</h1>
+            </header>
+        <nav id="menu">
+            <ul>
+                <!-- cal afegir els enllaços als apartats corresponents (rutes) -->
+                <li><a href="#"><img src="{{ asset('imatges/icones/inici.png') }}" alt="inici" class="icona" />Inici</a></li>
+                <li><a href="#"><img src="{{ asset('imatges/icones/inserirComarques.png') }}" alt="comarques" class="icona" />Comarques</a></li>
+                <li><a href="#"><img src="{{ asset('imatges/icones/inserirCiutat.png') }}" alt="ciutat" class="icona" />Ciutat</a></li>
+                <li><a href="#"><img src="{{ asset('imatges/icones/eliminar.png') }}" alt="eliminar" class="icona" />Eliminar Tot</a></li>
+            </ul>
+        </nav>
+    {% endblock %}
+        <main id="principal">
+            <section id="contingut">
+            {% block body %}
+                
+            {% endblock %}
+            </section>
+        </main>
+        {% block footer %}
+            <footer id="peu">
+                <p>
+                IES Lluís Simarro<br/>
+                Curs 22/23<br/>
+                DAW
+                </p>
+            </footer>
+        {% endblock %}
+    </div>
+    </body>
+</html>

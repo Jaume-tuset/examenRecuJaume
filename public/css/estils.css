@@ -1,0 +1,223 @@
+/* Estils de la pàgina inicial */
+html{
+    background-image: url("../imatges/fons.png");
+    background-repeat: repeat;
+    font-family: arial, serif;
+}
+
+#embolcall{
+    width:90%;
+    margin:10px auto;
+}
+#cap{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px green;
+    background-color: rgba(0,0,128,0.2);
+}
+#cap h1{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px #FFFFFF;
+    text-align:center;
+    color: red;
+    background-color:#F9E4AF;
+    font-family:arial, serif;
+    border-radius: 20px;
+}
+#principal{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px green;
+    background-color: rgba(128,0,0,0.2);
+}
+#menu{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px green;
+    background-color: rgba(0,0,128,0.2);
+}
+#menu ul{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    list-style: none;
+    text-align:center;
+}
+
+#menu ul li{
+    display: inline-block;
+    width: 220px;
+    border:solid 2px #FFFFFF;
+    text-align:center;
+    background-color: #F9E4AF;
+    color: red;
+    border-radius: 20px;
+
+}
+#menu ul li a{
+    display:block;
+    padding:10px;
+    font-size:1.5em;
+    color:red;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    background-color: beige;
+    color: green;
+    border-radius: 20px;
+}
+
+#principal #contingut{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+}
+
+#principal #contingut h2{
+    width:30%;
+    margin: 10px auto;
+    text-align:center;
+    background-color: #F9E4AF;
+    color: red;
+    border:solid 2px #FFFFFF;
+    border-radius: 20px;
+    padding:10px;
+}
+
+#principal #contingut form{
+    width:80%;
+    margin: 10px auto;
+    line-height: 40px;
+    font-size: 1.4em;
+    background-color: #F9E4AF;
+    color: red;
+    border:solid 2px #FFFFFF;
+    border-radius: 20px;
+    padding:10px;
+}
+#principal #contingut form label{
+    font-weight: bold;
+    padding:5px;
+}
+#principal #contingut form label::after{
+    content: " : ";
+}
+
+#principal #contingut p{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px #FFFFFF;
+    background-color: #F9E4AF;
+    font-family: Chilanka, arial, serif;
+    text-align:center;
+}
+
+#peu{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px green;
+    background-color: rgba(0,0,128,0.2);
+}
+
+#peu p{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    border:solid 3px #FFFFFF;
+    background-color: #F9E4AF;
+    font-family: Chilanka, arial, serif;
+    text-align: center;
+    color: red;
+    font-weight:bold;
+    font-size:1.3em;
+    border-radius: 20px;
+}
+
+.imatgePortada{
+    display:block;
+    width:500px;
+    padding: 10px;
+    margin:10px auto;
+}
+
+.icona{
+    vertical-align: middle;
+    height: 50px;
+    margin-right:5px;
+}
+
+.missatge{
+    display:block;
+    width: 80%;
+    color:red;
+    font-weight:bold;
+    margin:10px auto;
+}
+
+.textNom{
+    color:black;
+    text-decoration:underline;
+}
+/* estils dropdown */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 16px;*/
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F9E4AF;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:red;
+    border: solid 2px #FFFFFF;
+    border-radius: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: beige;
+    color: green;
+    border-radius: 20px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #42D0F2;
+    color:#FFFFFF;
+}

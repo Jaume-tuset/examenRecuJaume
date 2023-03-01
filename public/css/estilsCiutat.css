@@ -1,0 +1,80 @@
+/* Estils de ciutat */
+
+#principal #contingut h2{
+    width:70%;
+    margin:5px auto;
+    padding:5px;
+    border:solid 1px #BC09AE;
+    text-align:center;
+    color: #BC09AE;
+    background-color:#F3D6ED;
+    font-family:arial, serif;
+}
+
+#principal #contingut h3{
+    width:60%;
+    margin:5px auto;
+    padding:5px;
+    border:solid 1px #19911E;
+    text-align:center;
+    color: #19911E;
+    background-color:#DBF3D2;
+    font-family:arial, serif;
+}
+#principal #contingut div.ciutat{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    background-color: #DDC590;
+    text-align: justify;
+    border: solid 2px yellow;
+}
+#principal #contingut div.ciutat ul {
+    list-style: none;
+    width:90%;
+    padding: 5px;
+    margin:10px auto;
+}
+#principal #contingut div.ciutat ul li{
+    width:90%;
+    padding: 5px;
+    margin:3px auto;
+    background-color: #EBF0E0;
+}
+
+.imatgeLlista{
+    width:250px;
+    background-color: #EBF0E0;
+    display:block;
+    margin:10px auto;
+    border:solid 2px black;
+}
+
+/* estils del menú ciutat */
+#menu ul li{
+    background-color: #F9E4AF;
+}
+#menu ul li a{
+    color:green;
+}
+#menu ul li a:hover{
+    background-color: #FAC2FF;
+    color: #EC5CE0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #FAC2FF;
+    color: #EC5CE0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    background-color: #F9E4AF;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color:green;
+    border: solid 2px #FFFFFF;
+}
