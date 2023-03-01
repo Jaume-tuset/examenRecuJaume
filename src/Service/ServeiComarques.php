@@ -70,13 +70,11 @@ class ServeiComarques{
         ),
     );
 
-    public function getCiutats(){
+    public function get(){
         return $this->ciutats;
     }
 
-    public function getComarques(){
-        return $this->comarques;
-    }
+  
    
 
 }

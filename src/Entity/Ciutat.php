@@ -18,14 +18,32 @@ class Ciutat{
 
     #[Assert\NotBlank]
     #[ORM\Column(length:255)]
+    #[Assert\Range(
+        min:3,
+        minMessage:'El nombre ha de ser mas largo',
+    )]
+    #[Assert\Range(
+        max:20,
+        maxMessage:'El nombre ha de ser mas corto',
+    )]
     private ?string $nom;
 
     #[Assert\NotBlank]
     #[ORM\Column]
+    #[Assert\Range(
+        min:0,
+        max:200000,
+    )]
+    
     private ?int poblacio;
 
     #[Assert\NotBlank]
     #[ORM\Column]
+    #[Assert\Range(
+        min:46000,
+        max:46999,
+    )]
+    
     private ?int codiPostal;
 
     #[Assert\NotBlank]

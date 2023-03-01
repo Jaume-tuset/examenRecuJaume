@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %} 
+{% block title %}
+    Bienvenido
+{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    <link href="{{ asset('css/estilsCiutat.css') }}" rel="stylesheet"/>
+{% endblock %}
+{% block body %}
+    <body>
+        <div id="principal">
+            <div id="contingut">
+                {% if comarques %}
+                    <div class="comarques">
+                        {% for comarca in comarques %}
+                            <ul>
+                                <li>Nom : {{ comarca.getNom }}</li>
+                                <li>Població : {{ comarca.getPoblacio }}</li>
+                                <li>Municipis : {{ comarca.getMunicipis }}</li>
+                                <br>
+                            </ul>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                        <h2 id="titol-llistat">NO HI HAN COMARQUES</h2>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+{% endblock %}

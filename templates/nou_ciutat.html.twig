@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}Nou Ciutat{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('css/estilsCiutat.css') }}" rel="stylesheet">
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+{% block body %}
+    <div id="paragrafCiutat">
+        <h1>Nou Ciutat</h1>
+        {{ form_start(formulari) }}
+        {{ form_widget(formulari) }}
+        {{ form_end(formulari) }}
+    </div>
+{% endblock %}
+{% block footer %}
+    {{ parent() }}
+{% endblock %}
