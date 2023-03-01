@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %} 
+{% block title %}
+    Bienvenido
+{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    <link href="{{ asset('css/estilsCiutat.css') }}" rel="stylesheet"/>
+{% endblock %}
+{% block body %}
+    <body>
+        <div id="principal">
+            <div id="contingut">
+                <h3>BENVINGUT</h3>
+                {% if ciutats %}
+                    <div class="ciutats">
+                        {% for ciutat in ciutats %}
+                            <ul>
+                                <li>Nom : {{ ciutat.getNom }}</li>
+                                <li>Població : {{ ciutat.getPoblacio }}</li>
+                                <li>Codi Postal : {{ ciutat.getCodiPostal }}</li>
+                                <li><img class="imatgeLlista" src="{{ asset(ciutat.getImatge) }}"/></li>
+                                <li>Comarca : {{ ciutat.getComarca }}</li>
+                                <li>Dades : {{ ciutat.getDades }}</li>
+                                <br>
+                            </ul>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                        <h2 id="titol-llistat">NO HI HAN CIUTATS</h2>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+{% endblock %}

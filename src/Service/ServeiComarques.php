@@ -4,7 +4,7 @@ namespace App\Service;
 
 class ServeiComarques{
 
-    private $ciudad=array(
+    private $ciutats=array(
         array(
             "nom"=>"Xàtiva",
             "poblacio"=>"29637",
@@ -70,12 +70,14 @@ class ServeiComarques{
         ),
     );
 
-    public function getCiudad(){
-        return $this->ciudad;
+    public function getCiutats(){
+        return $this->ciutats;
     }
-    public function getComarca(){
+
+    public function getComarques(){
         return $this->comarques;
     }
+   
 
 }
 
